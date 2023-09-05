@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programing . . .</title>
+</head>
+<body>
+    <h1>Soma de Valores</h1>
+    <input type="number" name="txt01" id="txt01"> +
+    <input type="number" name="txt02" id="txt02">
+    <input type="submit" value="somar" onclick="somar()">
+    <div id="res">Resultado:</div>
+
+    <script>
+        function somar() {
+            var txt01 = window.document.getElementById('txt01')
+            var txt02 = window.document.getElementById('txt02')
+            var res = window.document.getElementById('res')
+            var n1 = Number(txt01.value)
+            var n2 =  Number(txt02.value)
+            s = n1 + n2
+            res.innerHTML = `A soma de ${n1} e ${n2} é ${s}`
+        }
+    </script>
+
+</body>
+</html>
